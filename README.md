@@ -1,21 +1,21 @@
-# coressh
-Build a custom Core .iso operating system with a SSH server
+# TinyCore-WithSSH
+Build a custom TinyCore.iso operating system with a SSH server
 
 #### What is the Core Project?
 
-The [Core Project](http://distro.ibiblio.org/tinycorelinux) is a project dedicated to providing a small, minimal Linux distribution that can be configured for any number of purposes. Tiny Core is
+The [Core Project](http://tinycorelinux.net/) is a project dedicated to providing a small, minimal Linux distribution that can be configured for any number of purposes. Tiny Core is
 
 >designed to run from a RAM copy created at boot time. Besides being fast, this protects system files from changes and ensures a pristine system on every reboot. Easy, fast, and simple renew-ability and stability is a principle goal of Tiny Core.[^1]
  
 There are three main flavors in the Core suite:
 
-* Core (9 MB) - command-line only 
-* TinyCore (15 MB) - Includes a GUI, wired network support only
-* CorePlus (72 MB) - Different windows managers, various keyboard layouts, and wireless support
+* Core (17 MB) - command-line only 
+* TinyCore (23 MB) - Includes a GUI, wired network support only, is the recommended option for new users who have a wired network connection.
+* CorePlus (248 MB) - Different windows managers, various keyboard layouts, and wireless support
 
 #### Overview
 
-This tutorial provides a walkthrough of how to build a custom ~13 MB Core .iso operating system with a Secure Shell (SSH) server.  The 15 MB TinyCore will be used as the operating system and platform to create and configure the Core base .iso.  
+This tutorial provides a walkthrough of how to build a custom TinyCore.iso operating system with a Secure Shell (SSH) server.  The 15 MB TinyCore will be used as the operating system and platform to create and configure the Core base .iso.  
 
 The goal is to have a customized Core .iso that can be booted into using virtualization software, such as VMware, in mere seconds and is completely memory resident.  The operating system is not installed onto a hard drive.  The purpose of this tutorial is to set the stage for the next one, which will be about SSH tunneling through a single and multiple servers for the purpose of protecting Internet traffic on public networks, penetration testing, or accessing your home network.  
 
